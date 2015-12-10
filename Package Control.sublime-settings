@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"Bootstrap 3 Snippets",
+		"BracketHighlighter",
+		"Clipboard Manager",
+		"ColorPicker",
+		"CSV",
+		"DustBuster",
+		"Emmet",
+		"ERB Snippets",
+		"FTPSync",
+		"Gist",
+		"GitGutter",
+		"HTML5",
+		"HTMLBeautify",
+		"Http Requester",
+		"jQuery Snippets pack",
+		"Package Control",
+		"PackageResourceViewer",
+		"Pretty JSON",
+		"Pretty YAML",
+		"Rails Migrations List",
+		"RailsCasts Colour Scheme",
+		"RubyTest",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeGit",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	]
+}
