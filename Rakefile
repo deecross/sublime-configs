@@ -26,11 +26,12 @@ task :install do
         end
       end
     else
-      copy_config_file(file, configs_path)
+      copy_config_file(file, configs_path, false)
     end
   end
 end
 
-def copy_config_file(file, configs_path)
+def copy_config_file(file, configs_path, backup = true)
+  system %Q{mv "#{configs_path}/#{file}" "#{configs_path}/#{file}.1"} if backup
   system %Q{cp "$PWD/#{file}" "#{configs_path}/#{file}"}
 end
