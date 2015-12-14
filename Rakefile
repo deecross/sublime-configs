@@ -2,7 +2,7 @@
 
 require 'rake'
 
-desc "install the dot files into user's home directory"
+desc "install settings files into user's Sublime Text 3 packages directory"
 task :install do
   replace_all = false
   files = Dir['*'] - %w[Rakefile]
@@ -29,6 +29,22 @@ task :install do
       copy_config_file(file, configs_path, false)
     end
   end
+end
+
+desc "fetch user's setting into the repo"
+task :fetch do
+  configs_path = "#{ENV['HOME']}/Library/Application Support/Sublime Text 3/Packages/User"
+  ["Preferences.sublime-settings", "Package Control.sublime-settings"].each do |file|
+    if File.exist?(File.join(configs_path, file))
+      fetch_config_file(file, configs_path)
+    else
+      puts "There is no #{file} in user's Sublime 3 Text packages directory..."
+    end
+  end
+end
+
+def fetch_config_file(file, configs_path)
+  system %Q{cp "#{configs_path}/#{file}" "$PWD/#{file}"}
 end
 
 def copy_config_file(file, configs_path, backup = true)
