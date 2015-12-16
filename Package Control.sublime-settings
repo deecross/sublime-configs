@@ -1,5 +1,8 @@
 {
 	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -32,6 +35,7 @@
 		"SublimeGit",
 		"TodoReview",
 		"Theme - Spacegray",
+		"TodoReview",
 		"TrailingSpaces"
 	]
 }
