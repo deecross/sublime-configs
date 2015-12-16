@@ -31,7 +31,7 @@ task :install do
   end
 end
 
-desc "fetch user's setting into the repo"
+desc "fetch user's settings files to the repo"
 task :fetch do
   configs_path = "#{ENV['HOME']}/Library/Application Support/Sublime Text 3/Packages/User"
   ["Preferences.sublime-settings", "Package Control.sublime-settings"].each do |file|
