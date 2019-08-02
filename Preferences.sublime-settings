@@ -1,22 +1,19 @@
 {
 	"always_show_minimap_viewport": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-	"expand_tabs_on_save": true,
-	"font_size": 12,
+	"color_scheme": "Packages/Colorsublime - Themes/toothpaste.tmTheme",
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"AngularJS",
-		"PackageResourceViewer",
-		"Theme - Phoenix",
 		"Vintage"
 	],
-	"preview_on_click": true,
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 2,
-	"rulers": [80],
-	"theme": "Spacegray.sublime-theme",
-	"trailing_spaces_include_current_line": false,
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
